@@ -1,0 +1,38 @@
+.main_page{
+    margin: 70px auto;
+}
+.main_page__title{
+    max-width: 30%;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+.title__icon svg{
+    width: 70px;
+    height: 50px;
+    color: rgb(214, 132, 24);
+}
+.title__text{
+}
+.main_page__subtitle{
+    
+}
+.cut__link{
+
+}
+.cut__link__input{
+
+}
+.cut__link__button{
+
+}
+.ready__link{
+
+}
+.ready__link__transition{
+
+}
+.ready__link__copy{
+
+}

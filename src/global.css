@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background-color: rgb(204, 231, 244); */
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
