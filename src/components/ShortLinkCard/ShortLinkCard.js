@@ -1,4 +1,4 @@
-import styles from "./OutputPart.module.css";
+import styles from "./ShortLinkCard.module.css";
 
 import { useState } from "react";
 import { useClipboard } from "use-clipboard-copy";
@@ -9,11 +9,6 @@ export default function OutputPart({ shortLink }) {
   const [isLinkCopied, setIsLinkCopied] = useState(false);
   const clipboard = useClipboard();
 
-  const goToLink = () => {
-    console.log(shortLink);
-    window.location.href = shortLink;
-  };
-
   const copyLink = () => {
     clipboard.copy(shortLink);
     setIsLinkCopied(!isLinkCopied);
@@ -21,9 +16,9 @@ export default function OutputPart({ shortLink }) {
 
   return (
     <div className={shortLink ? `${styles.ready__link}` : `${styles.link__display__none}`}>
-      <button className={styles.ready__link__transition} onClick={goToLink}>
-        <ImLink /> {shortLink.slice(8)}
-      </button>
+      <a className={styles.ready__link__transition} target="_blank" href={shortLink}>
+        <ImLink /> {shortLink.replace('http://', '').replace('https://', '')}
+      </a>
       <button className={styles.ready__link__copy} onClick={copyLink}>
         {isLinkCopied ? "Готово" : "Копировать"}
       </button>

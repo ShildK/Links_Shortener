@@ -3,15 +3,12 @@
     flex-direction: column;
 }
 .ready__link__transition{
-    width: 35%;
-    padding: 10px 0;
     margin-bottom: 20px;
-
-    background-color: white;
 
     font-size: 24px;
     font-weight: 500;
     text-align: start;
+    color: black;
 }
 .ready__link__copy{
     width: 18%;

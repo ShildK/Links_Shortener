@@ -1,5 +1,5 @@
-import styles from "./InputPart.module.css";
-import { getData } from "../../lib/fetchData";
+import styles from "./Form.module.css";
+import { fetchShortLink } from "../../lib/fetchShortLink";
 import { useState } from "react";
 
 export default function InputPart({ setShortLink }) {
@@ -10,7 +10,7 @@ export default function InputPart({ setShortLink }) {
   };
 
   const cutLink = async () => {
-    const readyLink = await getData(enteredLink);
+    const readyLink = await fetchShortLink(enteredLink);
     setShortLink(readyLink);
   };
 

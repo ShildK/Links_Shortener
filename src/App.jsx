@@ -4,8 +4,8 @@ import Container from "./components/Container/Container";
 import { useState } from "react";
 
 import Title from "./components/Title/Title";
-import InputPart from "./components/InputPart/InputPart";
-import OutputPart from "./components/OutputPart/OutputPart";
+import Form from "./components/Form/Form";
+import ShortLinkCard from "./components/ShortLinkCard/ShortLinkCard";
 
 function App() {
   const [shortLink, setShortLink] = useState("");
@@ -13,8 +13,8 @@ function App() {
   return (
     <Container>
       <Title />
-      <InputPart setShortLink={setShortLink} />
-      <OutputPart shortLink={shortLink} />
+      <Form setShortLink={setShortLink} />
+      <ShortLinkCard shortLink={shortLink} />
     </Container>
   )
 }
