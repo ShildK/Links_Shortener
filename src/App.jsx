@@ -1,13 +1,22 @@
 import "./global.css"
+import Container from "./components/Container/Container";
 
-import Home from "./components/Home/Home";
+import { useState } from "react";
 
+import Title from "./components/Title/Title";
+import InputPart from "./components/InputPart/InputPart";
+import OutputPart from "./components/OutputPart/OutputPart";
 
 function App() {
+  const [shortLink, setShortLink] = useState("");
+
   return (
-    <div style={{ maxWidth: "100%", height: "100lvh" }}>
-      <Home />
-    </div>)
+    <Container>
+      <Title />
+      <InputPart setShortLink={setShortLink} />
+      <OutputPart shortLink={shortLink} />
+    </Container>
+  )
 }
 
 export default App;

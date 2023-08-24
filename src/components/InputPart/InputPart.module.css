@@ -1,0 +1,44 @@
+.cut__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+.cut__link__input{
+    width: 75%;
+    padding: 10px 10px;
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 5px 25px rgb(198, 198, 198);
+    outline: none;
+
+    font-size: 22px;
+}
+.cut__link__button__active{
+    width: 20%;
+    padding: 10px 10px;
+
+    border-radius: 10px;
+    box-shadow: 2px 5px 25px rgb(198, 198, 198);
+    background-color: orange;
+
+    font-size: 22px;
+    color: white;
+}
+.cut__link__button__active:hover{
+    background-color: rgb(231, 151, 1);
+    transition: 0.2s;
+}
+.cut__link__button__disabled{
+    width: 20%;
+    padding: 10px 10px;
+
+    border-radius: 10px;
+    box-shadow: 2px 5px 25px rgb(198, 198, 198);
+    background-color: rgb(184, 184, 184);
+
+    font-size: 22px;
+    color: white;
+}
